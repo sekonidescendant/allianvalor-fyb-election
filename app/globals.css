@@ -74,11 +74,42 @@ img { max-width: 100%; display: block; }
   padding: 10px 20px; border-radius: 8px; flex-shrink: 0; transition: background 0.15s ease;
 }
 .nav-cta:hover { background: var(--red-dim); }
-.nav-mobile-toggle { display: none; }
+.nav-mobile-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.nav-mobile-panel {
+  display: none;
+}
 
 @media (max-width: 900px) {
   .nav-links { display: none; }
-  .nav-mobile-toggle { display: block; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
+  .nav-mobile-toggle { display: flex; }
+  .nav-mobile-panel {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--line);
+    padding: 12px 28px 16px;
+    gap: 4px;
+    background: var(--paper-alt);
+  }
+  .nav-mobile-panel a {
+    padding: 12px 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--slate);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-mobile-panel a:last-child { border-bottom: none; }
+  .nav-mobile-panel a.active { color: var(--red); font-weight: 700; }
 }
 
 /* ===== Hero ===== */
