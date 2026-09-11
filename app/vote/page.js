@@ -43,7 +43,7 @@ export default function VotePage() {
     e.preventDefault();
     setErrorMsg("");
     if (!isAllowedVoterEmail(email)) {
-      setErrorMsg("Use your school email ending in @fuoye.edu.ng or @liondapt.com.");
+      setErrorMsg("Use your school email ending in @fuoye.edu.ng ");
       return;
     }
     const selectionList = Object.entries(selections)
