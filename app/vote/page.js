@@ -185,8 +185,8 @@ export default function VotePage() {
               <div style={{ fontSize: 13, fontWeight: 700, color: "var(--navy)", marginBottom: 12 }}>
                 {selectedCount} position{selectedCount === 1 ? "" : "s"} selected — confirm with your school email to submit
               </div>
-              <div className="field" style={{ marginBottom: 14 }}>
-                <label htmlFor="email">School email (@fuoye.edu.ng or @liondapt.com)</label>
+                           <div className="field" style={{ marginBottom: 14 }}>
+                <label htmlFor="email">School email (@fuoye.edu.ng)</label>
                 <input
                   id="email"
                   type="email"
