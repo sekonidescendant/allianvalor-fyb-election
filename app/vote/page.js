@@ -42,8 +42,8 @@ export default function VotePage() {
   async function handleSubmit(e) {
     e.preventDefault();
     setErrorMsg("");
-    if (!isAllowedVoterEmail(email)) {
-      setErrorMsg("Use your school email ending in @fuoye.edu.ng or @liondapt.com.");
+       if (!isAllowedVoterEmail(email)) {
+      setErrorMsg("Use your school email ending in @fuoye.edu.ng.");
       return;
     }
     const selectionList = Object.entries(selections)
